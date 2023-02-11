@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&family=Roboto:wght@400;500;700&family=Ubuntu:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./admin.css">
+    <title>admin-panel-3</title>
+</head>
+
+<body>
+    <div class="main-section" id="main">
+        <!-- content-section start here -->
+        <div class="content-section" id="my-content">
+            <div class="content-part" id="content-part">
+
+                <div class="center-part">
+                    <div class="form-style">
+                        <div class="form-title">View    </div>
+                        <input type="name" placeholder="Name..." />
+                        <input type="phone" placeholder="Phone..." />
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle dropdown-custumize" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Case...
+                            </button>
+                            <ul class="dropdown-menu drop-option">
+                                <li><a class="dropdown-item" href="#">Select</a></li>
+                                <li><a class="dropdown-item" href="#">Case 2 </a></li>
+                                <li><a class="dropdown-item" href="#">Case 3</a></li>
+                                <li><a class="dropdown-item" href="#">Case 4</a></li>
+                                <li><a class="dropdown-item" href="#">Case 5</a></li>
+                                <li><a class="dropdown-item" href="#">Case 6</a></li>
+                            </ul>
+                        </div>
+                        <div class="btn-brdr"> <button class="submit-btn">Save</button></div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- content-section end here -->
+        </div>
+        <script>
+
+            function closeNav() {
+                document.getElementById("main").classList.toggle("open");
+
+            }
+
+
+
+        </script>
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>

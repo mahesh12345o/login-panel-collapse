@@ -1,0 +1,310 @@
+body {
+    font-family: 'Inter';
+}
+
+.main-section {
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* content-section css start here */
+
+.content-section {
+    background-color: rgb(133, 94, 94);
+    padding-left: 80px;
+    width: 100%;
+    height: 100vh;
+    transition: 1s;
+}
+
+.main-section.open .content-section {
+    padding-left: 224px;
+}
+
+.content-section .content-part {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-part .dropdown-toggle::after {
+    margin-right: 20px;
+}
+
+.content-part .center-part {
+    margin: auto;
+    padding: 0 80px;
+    background-color: #2E3360;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    position: relative;
+}
+
+.main-section.open .sidebar-section .collapse-icon {
+    position: absolute;
+    top: 128px;
+    right: -33px;
+    background-color: transparent;
+    border: 0;
+}
+
+
+.main-section .sidebar-section .brand-logo {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    padding: 25px 43px 20px 43px;
+    border-bottom: 1px solid #ffffff52;
+    transition: 1s;
+}
+
+.main-section.open .sidebar-section .brand-logo>a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.main-section.open .sidebar-section .brand-logo a#smallImage {
+    display: none;
+}
+
+.main-section.open .sidebar-section .brand-logo a#bigImage {
+    display: inline;
+    transition: 1s; 
+}
+
+.main-section .sidebar-section .brand-logo a#bigImage {
+    display: none;
+}
+
+.main-section .sidebar-section .collapse-icon {
+    position: absolute;
+    top: 128px;
+    right: -33px;
+    background-color: transparent;
+    border: 0;
+    transition: 1s;
+}
+
+.main-section  .collapse-icon img {
+    transform: rotate(180deg);
+}   
+
+.main-section.open  .collapse-icon img {
+    transform: rotate(0);
+}
+
+.main-section .sidebar-section .sidebar-links ul li span {
+    display: none;
+}
+
+.main-section.open .sidebar-section .sidebar-links ul li span {
+    display: inline;
+}
+
+.content-part .drop-option {
+    width: 100% !important;
+    left: 227px !important;
+    top: -67px !important;
+    background: #F8F8F8;
+    border-radius: 16px;
+}
+
+.main-section.open .abc {
+    position: relative;
+    top: 128px;
+    right: -188px;
+    z-index: 9;
+}
+.link-hover:after {
+    display:block;
+    content: '';
+    border-bottom: solid 3px #f0f0f0;  
+    transform: scaleX(0);  
+    transition: transform .5s ease-in-out;
+}
+
+.link-hover:hover:after { transform: scaleX(1); }
+.link-hover.fromRight:after{ transform-origin:100% 50%; }
+.link-hover.fromLeft:after{  transform-origin:  0% 50%; }
+
+
+.main-section .abc {
+    position: relative;
+    top: 128px;
+    right: -45px;
+    z-index: 3;
+    transition: 1s;
+    z-index: 9;
+}
+
+.content-part .form-style {
+    height: 84%;
+    margin: 35px 0 65px 0;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.content-part .form-title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 80px;
+}
+
+.content-part .form-style input {
+    margin-bottom: 30px;
+    opacity: 0.7;
+    border: 1px solid #CECECE;
+    border-radius: 16px;
+    padding: 13px 15px 15px 20px;
+    background: #2E3360;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.content-part .form-style select {
+    border-radius: 16px;
+    padding: 13px 0 15px 20px;
+    background: #ffffff;
+    color: #d0cbcb;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.content-part .dropdown-custumize {
+    width: 100%;
+    opacity: 0.7;
+    border: 1px solid #CECECE;
+    border-radius: 16px;
+    padding: 13px 2px 15px 20px;
+    background: #2E3360;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.content-part .form-style ::placeholder {
+    color: #FFFFFF;
+
+}
+
+.content-part .dropdown-item {
+    padding: 4px 0px 5px 20px;
+}
+
+.content-part .dropdown {
+    width: 100%;
+}
+
+.content-part .submit-btn {
+    padding: 12px 71px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 19px;
+    color: #ffffff;
+    opacity: 0.8;
+    background-color: #2E3360;
+    border: 2px solid #FFFFFF;
+    width: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-part .btn-brdr {
+    border: 2px solid white;
+    padding: 8px;
+    margin-top: 130px;
+}
+
+/* content css end here */
+
+/* sidebar-section css start here */
+
+.sidebar-section {
+    width: 80px;
+    height: 100%;
+    background: #2E3360;
+    position: fixed;
+    transition: 1s;
+    z-index: 4;
+}
+
+.main-section.open .sidebar-section {
+    width: 224px;
+    height: 100%;
+    background: #2E3360;
+    position: fixed;
+}
+
+.content-section-1 {
+    background-color: rgb(133, 94, 94);
+    padding-left: 80px;
+    width: 100%;
+    height: 100vh;
+}
+.collapse-icon {
+    background-color: transparent;
+    border: 0;
+    position: absolute;
+}
+
+.sidebar-section .brand-logo a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.sidebar-section .sidebar-links {
+    height: 100%;
+    width: 100%;
+    padding: 113px 36px 36px 37px;
+}
+
+.sidebar-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar-links ul li a>img {
+    margin-right: 12px;
+}
+
+.sidebar-links ul li {
+    margin-bottom: 60px;
+
+}
+
+.sidebar-links ul li a {
+    text-decoration: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #FFFFFF;
+    white-space: nowrap;
+    text-transform: capitalize;
+}
+
+/* sidebar-section css endt here */
